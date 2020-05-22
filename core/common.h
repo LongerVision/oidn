@@ -5,11 +5,12 @@
 
 #include "common/platform.h"
 
-#include "mkl-dnn/include/dnnl.hpp"
-#include "mkl-dnn/include/dnnl_debug.h"
-#include "mkl-dnn/src/common/dnnl_thread.hpp"
-#include "mkl-dnn/src/common/type_helpers.hpp"
-#include "mkl-dnn/src/cpu/jit_generator.hpp"
+#include "dnnl.hpp"
+#include "dnnl_debug.h"
+#include "mkldnn.h"
+#include "onednn/common/dnnl_thread.hpp"
+#include "onednn/common/type_helpers.hpp"
+#include "onednn/cpu/x64/jit_generator.hpp"
 
 #include "common/ref.h"
 #include "common/exception.h"
