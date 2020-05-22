@@ -72,6 +72,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}")
 # Library dependencies
 find_package(Threads REQUIRED)
 find_package(TBB REQUIRED)
+find_package(DNNL REQUIRED)
 
 # Packaging
 include(oidn_package)
@@ -80,7 +81,7 @@ include(oidn_package)
 include(oidn_platform)
 
 # DNNL
-include(oidn_dnnl)
+# include(oidn_dnnl)
 
 # ISPC
 set(OIDN_ISPC_TARGET_LIST sse4-i32x8;avx2-i32x8;avx512skx-i32x16;avx512knl-i32x16)
