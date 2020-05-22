@@ -13,6 +13,8 @@
 #include "weights/rt_ldr_alb_nrm.h"
 #include "weights/rtlightmap_hdr.h"
 
+using namespace dnnl::impl::cpu::x64;
+
 namespace oidn {
 
   // ---------------------------------------------------------------------------

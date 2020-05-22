@@ -5,6 +5,8 @@
 #include "color.h"
 #include "network.h"
 
+using namespace dnnl::impl::cpu::x64;
+
 namespace oidn {
 
   Network::Network(const Ref<Device>& device, const std::map<std::string, Tensor>& weightsMap)

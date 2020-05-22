@@ -4,6 +4,8 @@
 #include "device.h"
 #include "autoencoder.h"
 
+using namespace dnnl::impl::cpu::x64;
+
 namespace oidn {
 
   thread_local Device::ErrorState Device::globalError;
